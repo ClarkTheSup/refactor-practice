@@ -1,5 +1,7 @@
 package com.twu.refactoring;
 
+import java.util.Arrays;
+
 public class NumberCruncher {
     private final int[] numbers;
 
@@ -7,35 +9,19 @@ public class NumberCruncher {
         this.numbers = numbers;
     }
 
-    public int countEven() {
-        int count = 0;
-        for (int number : numbers) {
-            if (number % 2 == 0) count++;
-        }
-        return count;
+    public long countEven() {
+        return Arrays.stream(numbers).filter(num -> num % 2 == 0).count();
     }
 
-    public int countOdd() {
-        int count = 0;
-        for (int number : numbers) {
-            if (number % 2 == 1) count++;
-        }
-        return count;
+    public long countOdd() {
+        return Arrays.stream(numbers).filter(num -> num % 2 == 1).count();
     }
 
-    public int countPositive() {
-        int count = 0;
-        for (int number : numbers) {
-            if (number >= 0) count++;
-        }
-        return count;
+    public long countPositive() {
+        return Arrays.stream(numbers).filter(num -> num >= 0).count();
     }
 
-    public int countNegative() {
-        int count = 0;
-        for (int number : numbers) {
-            if (number < 0) count++;
-        }
-        return count;
+    public long countNegative() {
+        return Arrays.stream(numbers).filter(num -> num < 0).count();
     }
 }
