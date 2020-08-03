@@ -18,11 +18,11 @@ public class CustomerTest {
 
     private Customer customer = new Customer("Dinsdale Pirhana");
 
-    private Movie pythonMovie = new Movie("Monty Python and the Holy Grail", Movie.REGULAR);
-	private Movie ranMovie = new Movie("Ran", Movie.REGULAR);
-	private Movie laMovie = new Movie("LA Confidential", Movie.NEW_RELEASE);
-	private Movie trekMovie = new Movie("Star Trek 13.2", Movie.NEW_RELEASE);
-	private Movie wallaceMovie = new Movie("Wallace and Gromit", Movie.CHILDRENS);
+    private Movie pythonMovie = new RegularMovie("Monty Python and the Holy Grail");
+	private Movie ranMovie = new RegularMovie("Ran");
+	private Movie laMovie = new NewReleaseMovie("LA Confidential");
+	private Movie trekMovie = new NewReleaseMovie("Star Trek 13.2");
+	private Movie wallaceMovie = new ChildrenMovie("Wallace and Gromit");
 
     @Before
     public void setUpData(){
@@ -55,7 +55,9 @@ public class CustomerTest {
         BufferedReader file = new BufferedReader (new FileReader (filePath));
         BufferedReader actualStream = new BufferedReader (new StringReader (actualValue));
         String thisFileLine;
+        StringBuilder result = new StringBuilder();
         while  ((thisFileLine = file.readLine()) != null) {
+            result.append(thisFileLine);
             assertThat("in file: " + fileName, actualStream.readLine(), equalTo(thisFileLine));
         }
     }
