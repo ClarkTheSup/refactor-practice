@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.twu.refactoring.ReceiptTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-03T14:11:58" hostname="Clark-Machine" time="0.005">
+  <properties/>
+  <testcase name="shouldCalculateChargesForNonACTaxiFor30Kms" classname="com.twu.refactoring.ReceiptTest" time="0.004"/>
+  <testcase name="shouldCalculateChargesForNonACTaxiFor30KmsPeakTime" classname="com.twu.refactoring.ReceiptTest" time="0.0"/>
+  <testcase name="shouldCalculateChargesForACTaxiFor30Kms" classname="com.twu.refactoring.ReceiptTest" time="0.0"/>
+  <testcase name="shouldCalculateForACChargesFor30KmsPeakTime" classname="com.twu.refactoring.ReceiptTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
