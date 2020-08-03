@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.twu.refactoring.OrderReceiptTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-03T13:07:56" hostname="Clark-Machine" time="0.005">
+<testsuite name="com.twu.refactoring.OrderReceiptTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-03T13:20:51" hostname="Clark-Machine" time="0.005">
   <properties/>
   <testcase name="shouldPrintCustomerInformationOnOrder" classname="com.twu.refactoring.OrderReceiptTest" time="0.004"/>
   <testcase name="shouldPrintLineItemAndSalesTaxInformation" classname="com.twu.refactoring.OrderReceiptTest" time="0.001"/>
