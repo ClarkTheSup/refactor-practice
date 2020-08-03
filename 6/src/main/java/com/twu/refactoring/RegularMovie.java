@@ -5,8 +5,13 @@ public class RegularMovie extends Movie{
         super(title, Movie.REGULAR);
     }
 
+
     @Override
-    public double calculateAmount() {
-        return 0;
+    public double calculateAmount(int daysRented) {
+        double thisAmount = 0;
+        thisAmount += 2;
+        if (daysRented > 2)
+            thisAmount += (daysRented - 2) * 1.5;
+        return thisAmount;
     }
 }

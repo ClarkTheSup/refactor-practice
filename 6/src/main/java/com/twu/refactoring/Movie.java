@@ -13,7 +13,7 @@ public abstract class Movie {
 		this.priceCode = priceCode;
 	}
 
-	public abstract double calculateAmount();
+	public abstract double calculateAmount(int daysRented);
 
 	public int getPriceCode() {
 		return priceCode;

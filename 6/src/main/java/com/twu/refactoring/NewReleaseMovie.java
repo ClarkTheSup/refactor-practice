@@ -6,7 +6,7 @@ public class NewReleaseMovie extends Movie{
     }
 
     @Override
-    public double calculateAmount() {
-        return 0;
+    public double calculateAmount(int daysRented) {
+        return daysRented * 3;
     }
 }

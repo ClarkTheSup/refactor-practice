@@ -46,7 +46,17 @@ public class CustomerTest {
 
     @Test
     public void shouldOutputChangedStatement() throws Exception {
-        laMovie.setPriceCode(Movie.REGULAR);
+        int i = 0;
+        for (Rental rental : customer.getRentalList()){
+            if (!rental.getMovie().getTitle().equals(laMovie.getTitle())) {
+                i++;
+            }else {
+                break;
+            }
+        }
+        System.out.println(i);
+        customer.getRentalList().remove(i);
+        customer.getRentalList().add(i, new Rental(new RegularMovie(laMovie.getTitle()), 2));
         verifyOutput(customer.statement(), "outputChange");
     }
 
