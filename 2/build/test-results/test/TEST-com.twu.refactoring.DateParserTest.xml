@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.twu.refactoring.DateParserTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-08-03T13:30:57" hostname="Clark-Machine" time="0.012">
+  <properties/>
+  <testcase name="shouldThrowExceptionIfYearStringCannotBeParsed" classname="com.twu.refactoring.DateParserTest" time="0.004"/>
+  <testcase name="shouldThrowExceptionIfMinuteIsMoreThan59" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfDateIsMoreThan31" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfMinuteStringCannotBeParsed" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfMinuteIsNotInteger" classname="com.twu.refactoring.DateParserTest" time="0.001"/>
+  <testcase name="shouldParseDateForValidInput" classname="com.twu.refactoring.DateParserTest" time="0.003"/>
+  <testcase name="shouldThrowExceptionIfMonthStringCannotBeParsed" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfDateIsNotInteger" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfDateStringCannotBeParsed" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfYearIsNotInteger" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfHourIsMoreThan23" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfHourStringCannotBeParsed" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfMonthIsMoreThan12" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfYearIsLessThan2000" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfHourIsNotInteger" classname="com.twu.refactoring.DateParserTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionIfMonthIsNotInteger" classname="com.twu.refactoring.DateParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
